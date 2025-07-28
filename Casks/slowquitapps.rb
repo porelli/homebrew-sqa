@@ -1,16 +1,16 @@
 cask 'slowquitapps' do
-  version '0.8.1'
-  sha256 '7f6b5a518d9a6e7a3ff6596e6f6b017358a806d6a565d7660b93d9f5b262868a'
+  version '0.8.2'
+  sha256 'fef97f7e2cc6c82cc96940e55085a49dda916232d04ecfc0909a639bb4d33f89'
 
-  url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
+  url "https://github.com/porelli/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
   homepage 'https://github.com/dteoh/SlowQuitApps'
   livecheck do
-    url 'https://github.com/dteoh/SlowQuitApps/releases.atom'
+    url 'https://github.com/porelli/SlowQuitApps/releases.atom'
     strategy :sparkle
   end
 
-  depends_on macos: '>= :mojave'
+  depends_on macos: '>= :sonoma'
 
   app 'SlowQuitApps.app'
   binary "#{appdir}/SlowQuitApps.app/Contents/MacOS/sqa"
