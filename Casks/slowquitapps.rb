@@ -2,7 +2,7 @@ cask 'slowquitapps' do
   version '0.8.2'
   sha256 'fef97f7e2cc6c82cc96940e55085a49dda916232d04ecfc0909a639bb4d33f89'
 
-  url "https://github.com/porelli/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
+  url "https://github.com/porelli/SlowQuitApps/releases/download/v#{version}/SlowQuitApps-#{version}.zip"
   name 'SlowQuitApps'
   homepage 'https://github.com/dteoh/SlowQuitApps'
   livecheck do
